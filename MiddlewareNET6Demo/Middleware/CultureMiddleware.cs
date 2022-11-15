@@ -1,14 +1,14 @@
-﻿using System.Globalization;
+﻿ using System.Globalization;
 
-namespace MiddlewareNET6Demo.Middleware
+namespace  MiddlewareNET6Demo.Middleware
 {
-    public class CultureMiddleware
+     public class  CultureMiddleware
     {
-        private readonly RequestDelegate _next;
+        private readonly  RequestDelegate _next;
 
-        public CultureMiddleware(RequestDelegate next)
+        public  CultureMiddleware(RequestDelegate next)
         {
-            _next = next;
+             _next = next;
         }
 
         public async Task InvokeAsync(HttpContext context)

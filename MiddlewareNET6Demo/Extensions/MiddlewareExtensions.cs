@@ -1,27 +1,28 @@
 ﻿using MiddlewareNET6Demo.Middleware;
 
-namespace MiddlewareNET6Demo.Extensions
+namespace  MiddlewareNET6Demo.Extensions
 {
-    public static class MiddlewareExtensions
-    {
+     public static class MiddlewareExtensions
+     {
         /// <summary>
         /// Adds the Layout middleware, which does not change processing at all.
         /// </summary>
         /// <param name="builder"></param>
         /// <returns></returns>
+        
         public static IApplicationBuilder UseLayoutMiddleware(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<LayoutMiddleware>();
         }
 
-        /// <summary>
-        /// Adds the Simple Response middleware, which immediately returns a response.
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
-        public static IApplicationBuilder UseSimpleResponseMiddleware(this IApplicationBuilder builder)
+        ///  <summary>
+        ///  Adds the Simple Response middleware, which immediately returns a response.
+        ///  </summary>
+        ///  <param name="builder"></param>
+        ///  <returns></returns>
+        public static IApplicationBuilder  UseSimpleResponseMiddleware(this IApplicationBuilder builder)
         {
-            return builder.UseMiddleware<SimpleResponseMiddleware>();
+          return builder.UseMiddleware<SimpleResponseMiddleware>();
         }
 
         /// <summary>
@@ -44,21 +45,21 @@ namespace MiddlewareNET6Demo.Extensions
             return builder.UseMiddleware<CultureMiddleware>();
         }
 
-        /// <summary>
-        /// Adds the time logging middleware, which logs how long it takes for the system to return a response.
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
-        public static IApplicationBuilder UseTimeLoggingMiddleware(this IApplicationBuilder builder)
+        ///  <summary>
+        ///  Adds the time logging middleware, which logs how long it takes for the system to return a response.
+        ///  </summary>
+        ///  <param name="builder"></param>
+        ///  <returns></returns>
+        public static IApplicationBuilder UseTimeLoggingMiddlewareI(this IApplicationBuilder builder)
         {
-            return builder.UseMiddleware<TimeLoggingMiddleware>();
+           return builder.UseMiddleware<TimeLoggingMiddleware>();
         }
 
-        /// <summary>
-        /// Adds the intentional delay middleware, which makes the pipeline pause for 100ms both on request and again on response.
-        /// </summary>
-        /// <param name="builder"></param>
-        /// <returns></returns>
+        ///  <summary>
+        ///  Adds the intentional delay middleware, which makes the pipeline pause for 100ms both on request and again on response.
+        ///  </summary>
+        ///  <param name="builder"></param>
+        ///  <returns></returns>
         public static IApplicationBuilder UseIntentionalDelayMiddleware(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<IntentionalDelayMiddleware>();
