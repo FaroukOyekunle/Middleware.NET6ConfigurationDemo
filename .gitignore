@@ -361,3 +361,13 @@
 
 # Fody - auto-generated XML schema
  FodyWeavers.xsd
+.vs/MiddlewareNET6Demo/v17/.suo
+.vs/MiddlewareNET6Demo/DesignTimeBuild/.dtbcache.v2
+.vs/MiddlewareNET6Demo/FileContentIndex/bbb8c59c-b6b9-4c69-bcce-c8430d44618f.vsidx
+.vs/ProjectEvaluation/middlewarenet6demo.metadata.v5.1
+.vs/ProjectEvaluation/middlewarenet6demo.projects.v5.1
+.vs/MiddlewareNET6Demo/FileContentIndex/read.lock
+.vs/slnx.sqlite
+MiddlewareNET6Demo/obj/MiddlewareNET6Demo.csproj.nuget.g.props
+MiddlewareNET6Demo/obj/MiddlewareNET6Demo.csproj.nuget.dgspec.json
+MiddlewareNET6Demo/obj/Debug/net6.0/MiddlewareNET6Demo.GeneratedMSBuildEditorConfig.editorconfig
